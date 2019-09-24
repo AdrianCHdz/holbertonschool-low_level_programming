@@ -33,6 +33,11 @@ int print_sign(int n);
 int _abs(int);
 #endif
 
+#ifndef TIMES_TABLE_H
+#define TIMES_TABLE_H
+void times_table(void);
+#endif
+
 #ifndef PRINT_LAST_DIGIT_H
 #define PRINT_LAST_DIGIT_H
 int print_last_digit(int);
@@ -41,4 +46,9 @@ int print_last_digit(int);
 #ifndef JACK_BAUER_H
 #define JACK_BAUER_H
 void jack_bauer(void);
+#endif
+
+#ifndef ADD_H
+#define ADD_H
+int add(int, int);
 #endif
