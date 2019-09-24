@@ -5,5 +5,5 @@ void positive_or_negative(int i);
 
 #ifndef LARGEST_NUMBER_H
 #define LARGEST_NUMBER_H
-int largest_number(int a, int b, int c);
+int largest_number(int, int, int);
 #endif
