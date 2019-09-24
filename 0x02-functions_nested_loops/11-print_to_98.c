@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * print_to_98  - Print numbers to 98
+ * @n: Range of numbers it will take
  *
  * Return: Always 0.
  */
@@ -20,7 +21,7 @@ void print_to_98(int n)
 			}
 			else
 				putchar('\n');
-	        }
+		}
 	}
 	else if (n >= 98)
 	{
