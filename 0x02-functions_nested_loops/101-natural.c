@@ -8,7 +8,7 @@ int main(void)
 {
 	long int a;
 	long int mult;
-	long int b;
+
 
 	mult = 0;
 	for (a = 0; a <= 1024; a++)
