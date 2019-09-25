@@ -20,4 +20,5 @@ int main(void)
 	}
 	printf("%ld", mult);
 	putchar('\n');
+	return (0);
 }
