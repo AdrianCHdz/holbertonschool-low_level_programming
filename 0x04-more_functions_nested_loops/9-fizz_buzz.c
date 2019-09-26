@@ -20,13 +20,13 @@ int main(void)
 		}
 		else if (a % 5 == 0)
 		{
-				printf("Buzz");
+			printf("Buzz");
 		}
 		else
 		{
 			printf("%d", a);
 		}
-		if ( a < 100)
+		if (a < 100)
 		{
 			printf(" ");
 		}
