@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - check the code for Holberton School students.
- *@a: value that will take 
+ *@n: value that will take
  * Return: Always 0.
  */
 void print_triangle(int n)
