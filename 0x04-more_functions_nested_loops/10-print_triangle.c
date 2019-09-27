@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_line - check the code for Holberton School students.
- *
+ * print_triangle - check the code for Holberton School students.
+ *@a: value that will take 
  * Return: Always 0.
  */
 void print_triangle(int n)
