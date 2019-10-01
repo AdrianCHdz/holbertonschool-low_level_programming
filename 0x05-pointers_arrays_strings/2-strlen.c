@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * _strlen - print the lenght of the word
+ * @s: Each of the characters that will come int
  * Return: Always 0.
  */
 int _strlen(char *s)
