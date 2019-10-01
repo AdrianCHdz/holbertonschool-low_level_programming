@@ -9,11 +9,11 @@ void puts2(char *str)
 {
 	int position;
 
-	while (position[str] != 0)
+	while (str[position] != 0)
 	{
-		if (position[str] % 2 == 0)
+		if (str[position] % 2 == 0)
 		{
-			_putchar(position[str]);
+			_putchar(str[position]);
 		}
 		position++;
 	}
