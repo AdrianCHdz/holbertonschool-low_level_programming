@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * _puts - print the characters
+ * @str: string of characters to be printed
  * Return: Always 0.
  */
 void _puts(char *str)
