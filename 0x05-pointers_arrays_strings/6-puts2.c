@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * puts2 - print only the odd numbers.
+ * @str: the values that will be comming.
  * Return: Always 0.
  */
 void puts2(char *str)
