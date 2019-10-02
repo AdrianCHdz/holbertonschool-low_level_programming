@@ -16,7 +16,7 @@ void puts_half(char *str)
 	}
 	if (position % 2 != 0)
 	{
-	        position += 1;
+		position += 1;
 	}
 	m = position / 2;
 	while (m <= position)
