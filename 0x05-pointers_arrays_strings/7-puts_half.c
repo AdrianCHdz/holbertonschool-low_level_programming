@@ -7,20 +7,19 @@
  */
 void puts_half(char *str)
 {
-	int position;
+	int position = 0;
 	int m;
 
-	while ((str[position]) != '\0')
+	while (str[position] != '\0')
 	{
 		position++;
 	}
-	position -= 1;
-	m = (position / 2);
 	if (position % 2 != 0)
 	{
-		m += 1;
+		position += 1;
 	}
-	while (m <= position)
+	m = position / 2;
+	while (str[m] != '\0')
 	{
 		_putchar(str[m]);
 		m++;
