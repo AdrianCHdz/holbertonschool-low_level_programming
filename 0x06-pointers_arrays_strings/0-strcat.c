@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _strcat - adds a new string to the principal string
  * @dest: the string from which is going to be added the next.
