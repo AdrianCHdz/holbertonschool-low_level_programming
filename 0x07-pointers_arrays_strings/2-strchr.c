@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * _strchr - check the code for Holberton School students.
+ * @c: the character that we will need to find.
+ * @s: the string that will be printed
  * Return: Always 0.
  */
 char *_strchr(char *s, char c)
@@ -15,6 +16,10 @@ char *_strchr(char *s, char c)
 			return (s + a);
 		}
 		a++;
+	}
+	if (s[a] == c)
+	{
+		return (s + a);
 	}
 	return (0);
 }
