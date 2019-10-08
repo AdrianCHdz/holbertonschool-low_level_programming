@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * _strspn - Returns the number of bytes in the initial segment.
+ * @s: The string that will be compared.
+ * @accept: The string from which the segment will be compared with.
  * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept)
