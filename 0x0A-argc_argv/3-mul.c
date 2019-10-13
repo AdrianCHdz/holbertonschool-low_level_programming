@@ -8,7 +8,7 @@
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
-{
+
 	(void)argc;
 
 	if (argv[1] && argv[2])
