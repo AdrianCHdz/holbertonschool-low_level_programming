@@ -5,6 +5,7 @@
  * main - Adittion between numbers passed to the program
  * @argc: the number of elemnts in the string
  * @argv: the string of the characters in the elements
+ * Return: The result of the addition.
  */
 int main(int argc, char *argv[])
 {
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			add+= atoi(argv[a]);
+			add += atoi(argv[a]);
 		}
 		printf("%d\n", add);
 	}
