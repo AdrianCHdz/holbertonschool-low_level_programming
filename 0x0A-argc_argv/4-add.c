@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h> /** atoi function */
+#include <ctype.h>
 /**
  * main - Use the arguments that will be passed in the program
  * @argc: counter
@@ -19,16 +20,13 @@ int main(int argc, char *argv[])
 		{
 			for (b = 0; argv[a][b] != '\0'; b++)
 			{
-				if (*argv[a] >= 48 && *argv[a] <= 57)
-					{
-						add += atoi(argv[a]);
-					}
-				else
+				if (!(isdigit(argv[a][b])))
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
+			add += atoi(argv[a]);
 		}
 		printf("%d\n", add);
 	}
