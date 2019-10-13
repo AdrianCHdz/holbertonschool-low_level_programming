@@ -4,7 +4,7 @@
  * main - Use the arguments that will be passed in the program
  * @argc: counter
  * @argv: the vector of the argument
- * REturn: Always 0.
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
