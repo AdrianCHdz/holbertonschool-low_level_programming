@@ -1,16 +1,15 @@
-#include "holberton.h"
 #include <stdio.h>
 /**
- * main - Use the arguments that will be passed in the program
- * @argc: counter
- * @argv: the vector of the argument
- * Return: Always 0.
+ * main - uses the arguments passed
+ * @argc: the number of arguments
+ * @argv: the string insed
+ * Return: 0.
  */
 int main(int argc, char *argv[])
 {
 	int a;
 
-	for(a = 1; a < argc; a++)
+	for (a = 0; a < argc; a++)
 	{
 		printf("%s\n", argv[a]);
 	}
