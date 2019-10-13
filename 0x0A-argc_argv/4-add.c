@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 /**
  * main - Use the arguments that will be passed in the program
@@ -20,7 +19,7 @@ int main(int argc, char *argv[])
 		{
 			for (b = 0; argv [a][b] != '\0'; b++)
 			{
-				if (!(isdigit(argv[a][b])))
+				if (48 <= *argv[a] && *argv[a] >= 57)
 					{
 						printf("Error");
 						return (1);
