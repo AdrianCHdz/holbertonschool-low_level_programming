@@ -1,6 +1,5 @@
-#include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h> /** atoi func library */
+#include <stdlib.h>
 /**
  * main - Use the arguments that will be passed in the program
  * @argc: counter
@@ -14,6 +13,7 @@ int main(int argc, char *argv[])
 	if (argv[1] && argv[2])
 	{
 		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
 	else
 	{
