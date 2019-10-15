@@ -3,8 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _strdup - prints the pointer to a new space in memory which is the copy.
+ * @a: first counter.
+ * @b: counter of the string.
+ * @copy: the pointer to the new string.
  * Return: Always 0.
  */
 char *_strdup(char *str)
@@ -15,7 +17,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return('\0');
+		return ('\0');
 	}
 	while (str[a] != '\0')
 	{
