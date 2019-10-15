@@ -5,7 +5,7 @@
 /**
  * _strdup - prints the pointer to a new space in memory which is the copy.
  * @a: first counter.
- * @b: counter of the string.
+ * @b: counter of the string
  * @copy: the pointer to the new string.
  * Return: Always 0.
  */
