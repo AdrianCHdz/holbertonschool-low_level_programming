@@ -1,0 +1,1 @@
+*in this proyect I will be understanding what is the malloc and free functions work and how do I use them*
