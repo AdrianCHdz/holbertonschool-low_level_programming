@@ -1,8 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *
- *
+ * create_array - creates an array of char from a size
+ * @a: a counter
+ * @string: Pointer to a char that creates the array
+ * Return: the string replaced with a character, or NULL if if there is no size
  */
 char *create_array(unsigned int size, char c)
 {
