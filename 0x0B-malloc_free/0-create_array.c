@@ -4,7 +4,8 @@
  * create_array - creates an array of char from a size
  * @a: a counter
  * @string: Pointer to a char that creates the array
- * Return: the string replaced with a character, or NULL if if there is no size
+ * Return: the string replaced with a character
+ * NULL if there the size is 0 or NULL
  */
 char *create_array(unsigned int size, char c)
 {
