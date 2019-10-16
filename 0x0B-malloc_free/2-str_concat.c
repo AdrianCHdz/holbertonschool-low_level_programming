@@ -13,9 +13,10 @@ char *str_concat(char *s1, char *s2)
 	int a = 0;
 	int b = 0;
 	int c = 0;
+	int d = 0;
 	char *copy;
 
-	if (s1 == 0 && s2 == 0)
+	if (s1 == NULL && s2 == NULL)
 	{
 		return ('\0');
 	}
@@ -33,11 +34,10 @@ char *str_concat(char *s1, char *s2)
 		copy[c] = s1[c];
 		c++;
 	}
-	a = 0;
-	while (s2[a] != '\0')
+	while (s2[d] != '\0')
 	{
-		copy[c] = s2[a];
-		a++;
+		copy[c] = s2[d];
+		d++;
 		c++;
 	}
 	return (copy);
