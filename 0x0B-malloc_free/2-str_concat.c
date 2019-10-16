@@ -16,14 +16,14 @@ char *str_concat(char *s1, char *s2)
 	int d = 0;
 	char *copy;
 
-	/*if (s1 == NULL)
+	if (s1 == NULL)
 	{
-		s1 = 0;
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = 0;
-	}*/
+		s2 = "";
+	}
 	while (s1[a] != '\0')
 		a++;
 	while (s2[b] != '\0')
