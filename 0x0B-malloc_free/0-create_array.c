@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * create_array - creates an array of char from a size
- * @a: a counter
- * @string: Pointer to a char that creates the array
+ * @size: amount of times the character will be printed
+ * @c: character to be printed
  * Return: the string replaced with a character
  * NULL if there the size is 0 or NULL
  */
