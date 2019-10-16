@@ -4,9 +4,7 @@
 
 /**
  * _strdup - prints the pointer to a new space in memory which is the copy.
- * @a: first counter.
- * @b: counter of the string
- * @copy: the pointer to the new string.
+ * @str: the pointer to the string.
  * Return: Always 0.
  */
 char *_strdup(char *str)
