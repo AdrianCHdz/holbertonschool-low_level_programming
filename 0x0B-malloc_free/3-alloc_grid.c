@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
+ * alloc_grid - prints a grid of integers
  * @width: width of the grid
  * @height: height of the grid
  *
@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	matrix = malloc((sizeof(int *) * height) + 1);
