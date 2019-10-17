@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * string_nconcat - concat the strings.
  * @s1: the first string.
@@ -15,13 +16,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int d = 0;
 	char *copy;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	while (s1[a] != '\0')
 		a++;
-	while (s2[b] != '\0')
+	while (s2[b] != '\0' && b < n)
 		b++;
 	if (n >= b)
 	{
