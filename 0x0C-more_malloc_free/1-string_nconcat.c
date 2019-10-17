@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		copy[c] = s1[c];
 		c++;
 	}
-	while (s2[d] != '\0')
+	while (s2[d] != '\0' && d < n)
 	{
 		copy[c] = s2[d];
 		d++;
