@@ -2,6 +2,8 @@
 #include <stdlib.h>
 /**
  * _calloc - prints buffer in hexa
+ * @nmemb: the number of elements that will be in the string
+ * @size: the size of the type of data
  * Return: dimensions of the string
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
