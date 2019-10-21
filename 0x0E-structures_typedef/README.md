@@ -1,0 +1,1 @@
+*In this proyect I will be learning about what are structures and the usage of typedef*
