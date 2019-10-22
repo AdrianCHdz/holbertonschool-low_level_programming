@@ -47,27 +47,29 @@ dog_t *new_dog(char *name, float age, char *owner)
 	ndog = malloc(sizeof(struct dog));
 	if (ndog == NULL)
 		return (NULL);
-
-	newname = malloc(sizeof(name));
-	if (newname == NULL)
-	{
-		free(ndog);
-		return (NULL);
-	}
 	else
 	{
-		newowner = malloc(sizeof(owner));
+		newname = malloc(sizeof(name));
+		if (newname == NULL)
+		{
+			free(ndog);
+			return (NULL);
+		}
+		else
+		{
+			newowner = malloc(sizeof(owner));
+		}
+		if (newowner == NULL)
+		{
+			free(newname);
+			free(ndog);
+			return (NULL);
+		}
+		newname = _strdup(name);
+		newowner = _strdup(owner);
+		ndog->name = newname;
+		ndog->age = age;
+		ndog->owner = newowner;
+		return (ndog);
 	}
-	if (newowner == NULL)
-	{
-		free(newname);
-		free(ndog);
-		return (NULL);
-	}
-	newname = _strdup(name);
-	newowner = _strdup(owner);
-	ndog->name = newname;
-	ndog->age = age;
-	ndog->owner = newowner;
-	return (ndog);
 }
