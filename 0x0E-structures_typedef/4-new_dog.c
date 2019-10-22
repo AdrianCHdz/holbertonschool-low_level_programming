@@ -2,15 +2,6 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * _slen - gets the lenght of the string
- * @n: the string to be valued
- * Return: the lenght
- */
-int _slen(char *n)
-{
-	return ((*n != '\0') ? 1 + _slen(n + 1) : 0);
-}
-/**
  * _strdup - prints the pointer to a new space in memory which is the copy.
  * @str: the pointer to the string.
  * Return: Always 0.
@@ -63,7 +54,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(ndog);
 		return (NULL);
 	}
-	newowner = malloc(sizeof(owner));
+	else
+	{
+		newowner = malloc(sizeof(owner));
+	}
 	if (newowner == NULL)
 	{
 		free(newname);
