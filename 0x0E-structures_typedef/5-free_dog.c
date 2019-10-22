@@ -2,8 +2,8 @@
 #include "dog.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * free_dog - frees the dog
+ * @d: the pointer to the struct
  * Return: Always 0.
  */
 void free_dog(dog_t *d)
