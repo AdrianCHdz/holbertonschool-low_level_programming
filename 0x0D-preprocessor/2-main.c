@@ -1,5 +1,9 @@
 #include <stdio.h>
-int main()
+/**
+ *
+ * main - prints the name of the file
+ */
+int main(void)
 {
 	printf("%s\n", __FILE__);
 }
