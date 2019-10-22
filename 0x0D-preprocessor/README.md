@@ -1,0 +1,1 @@
+*In this proyect I will be learning everything about what are macros and going deeper into the preprocessor*
