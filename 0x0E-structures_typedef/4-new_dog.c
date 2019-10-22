@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (str[b] != '\0')
+	while (b < a)
 	{
 		copy[b] = str[b];
 		b++;
@@ -44,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *ndog;
 	char *newname, *newowner;
 
-	ndog = malloc(sizeof(struct dog));
+	ndog = malloc(sizeof(dog_t));
 	if (ndog == NULL)
 		return (NULL);
 	newname = malloc(sizeof(name));
@@ -60,10 +60,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newname);
 		return (NULL);
 	}
-	_strdup(name);
-	_strdup(owner);
-	ndog->name = name;
+	newname = _strdup(name);
+	newowner = _strdup(owner);
+	ndog->name = newname;
 	ndog->age = age;
-	ndog->owner = owner;
+	ndog->owner = newowner;
 	return (ndog);
 }
