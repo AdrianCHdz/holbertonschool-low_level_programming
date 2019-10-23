@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * int_index - check if a number is equal to 98
+ * int_index - return the number of times a coincidence is met
  * @array: the integer to check
  * @cmp: the pointer to a function.
  * @size: the size that the array will have
