@@ -19,10 +19,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s", separator);
 			}
-			else if (n == 1)
-			{
-				printf("\n");
-			}
 			i++;
 		}
 		printf("\n");
