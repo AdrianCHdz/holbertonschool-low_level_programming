@@ -64,12 +64,12 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (fmt[j].frmt)
+		while (j < 4)
 		{
 			if (format[i] == *fmt[j].frmt)
 			{
 				printf("%s", sep);
-				fmt[j].fs(all);
+				(*fmt[j].fs)(all);
 				sep = ", ";
 			}
 			j++;
