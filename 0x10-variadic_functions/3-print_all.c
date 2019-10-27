@@ -66,7 +66,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (format[i] == *fmt[j].frmt)
+			if ((*fmt[j].frmt) == format[i])
 			{
 				printf("%s", sep);
 				(*fmt[j].fs)(all);
