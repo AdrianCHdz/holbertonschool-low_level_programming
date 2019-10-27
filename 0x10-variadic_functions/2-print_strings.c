@@ -1,4 +1,10 @@
 #include "variadic_functions.h"
+/**
+ * print_strings - print the string given
+ *
+ * @separator: what will be printed to separate each of the parameters
+ * @n: the number of characters that will be printed
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 1;
