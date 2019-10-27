@@ -15,4 +15,5 @@ typedef struct frmtsp
 void frmatchar();
 void frmatint();
 void frmatstr();
+void frmatflt();
 #endif
