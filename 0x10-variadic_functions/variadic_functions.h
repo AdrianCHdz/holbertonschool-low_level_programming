@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
+/**
+ * struct frmtsp - structure for comparision and function call
+ * @frmt: The type of format to be printed.
+ * @fs: The function to be called.
+ */
 typedef struct frmtsp
 {
 	char *frmt;
