@@ -8,6 +8,7 @@ void print_all(const char * const format, ...)
 		{"c", frmatchar},
 		{"i", frmatint},
 		{"s", frmatstr},
+		{"f", frmatflt},
 		{NULL, NULL}
 	};
 	int i = 0;
@@ -54,4 +55,8 @@ void frmatstr(va_list all)
 		return;
 	}
 	printf("%s", string);
+}
+void frmatflt(va_list all)
+{
+	printf("%f", va_arg(all, double));
 }
