@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint_end - Adds a new node in the ned of the list
+ * add_dnodeint_end - Adds a new node in the ned of the list
  * @head: A double pointer to the list
  * @n: The element that will take the list
  * Return: The head with the new node
