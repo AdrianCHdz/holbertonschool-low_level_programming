@@ -5,4 +5,4 @@ NAME = holberton
 all: generate
 
 generate:
-	${CC} ${OBJ} -o ${NAME}
+	${CC} ${SRC} -c -o ${NAME}
