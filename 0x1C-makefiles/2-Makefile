@@ -1,0 +1,8 @@
+CC = gcc
+SRC = main.c holberton.c
+OBJ = ${SRC:.o=.c}
+NAME = holberton
+all: generate
+
+generate:
+	${CC} ${OBJ} -o ${NAME}
