@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c holberton.c
+
+all: generate
+
+generate:
+	${CC} ${SRC} -o holberton
