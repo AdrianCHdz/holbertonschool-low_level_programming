@@ -52,7 +52,7 @@ int jump_search(int *array, size_t size, int value)
 		}
 		max = size - 1;
 		printf(found, min, max);
-		res = binary(array, max, value, min);
+		res = customl_search(array, max, value, min);
 		if (res > 0)
 			return (res);
 	}
