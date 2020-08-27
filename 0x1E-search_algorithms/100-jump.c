@@ -37,20 +37,24 @@ int jump_search(int *array, size_t size, int value)
 
 	if (array)
 	{
-		while (1)
+		while (max <= size - 1)
 		{
 			if (value <= array[max])
 			{
 				printf(found, min, max);
-				if (max > size)
-					max = size - 1;
 				res = customl_search(array, max, value, min);
-				return (res > 0 ? res : -1);
+				if (res > 0)
+					return (res);
 			}
 			min = max;
 			max += sqrt(size);
 			customl_search(array, min, value, min);
 		}
+		max = size - 1;
+		printf(found, min, max);
+		res = binary(array, max, value, min);
+		if (res > 0)
+			return (res);
 	}
 	return (-1);
 }
