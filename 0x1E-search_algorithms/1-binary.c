@@ -1,6 +1,5 @@
 #include "search_algos.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * binary_search - This funcion talks by itself
  * @array: an array of integers with undifined numbers
@@ -17,6 +16,7 @@ int binary_search(int *array, size_t size, int value)
 	{
 		while (min <= max)
 		{
+			printf("Searching in array: ");
 			for (tmp = min; tmp <= max; tmp++)
 				printf(tmp != max ? "%d, " : "%d\n",
 				       array[tmp]);
