@@ -11,7 +11,7 @@
  */
 skiplist_t *customl_search(size_t max, int value, skiplist_t *min)
 {
-	while (min->next && min->index <= max)
+	while (min && min->index <= max)
 	{
 		printf("Value checked at index [%lu] = [%d]\n",
 		       min->index, min->n);
@@ -48,6 +48,12 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 			if (list->express)
 				list = list->express;
 			customl_search(list->index, value, list);
+		}
+		if (value >= list->n)
+		{
+			min = list;
+			for (; list->next;)
+				list = list->next;
 		}
 		printf(found, min->index, list->index);
 		node = customl_search(list->index, value, min);
