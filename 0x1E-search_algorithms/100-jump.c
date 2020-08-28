@@ -50,9 +50,8 @@ int jump_search(int *array, size_t size, int value)
 			max += sqrt(size);
 			customl_search(array, min, value, min);
 		}
-		max = size - 1;
 		printf(found, min, max);
-		res = customl_search(array, max, value, min);
+		res = customl_search(array, size - 1, value, min);
 		if (res > 0)
 			return (res);
 	}
